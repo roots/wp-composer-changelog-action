@@ -23,7 +23,7 @@ runs:
   using: 'composite'
   steps:
     - name: Comment changelogs on PR
-      uses: actions/github-script@v7
+      uses: actions/github-script@v9
       env:
         MAX_CHANGELOG_LENGTH: ${{ inputs.max-changelog-length }}
         MAX_COMMENT_LENGTH: ${{ inputs.max-comment-length }}
